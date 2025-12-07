@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Brutus Mou - Le Sage Autoproclamé du Néant Total. Posez vos questions existentielles à ce chatbot mystique et absurde." />
+  <title>Brutus Mou — Sage Autoproclamé</title>
+  <link rel="icon" type="image/png" href="assets/brutus-avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="bot-avatar-wrapper glitch-container">
+        <img src="assets/brutus-avatar.png" alt="Brutus Mou" class="bot-avatar" />
+        <div class="glitch-overlay"></div>
+      </div>
+      <div class="bot-info">
+        <h1>Brutus Mou</h1>
+        <p>Sage autoproclamé du Néant Total</p>
+      </div>
+      <div class="header-controls">
+        <div class="sarcasm-control">
+          <label for="sarcasm-level">🎭 Sarcasme</label>
+          <input type="range" id="sarcasm-level" min="0" max="5" value="3" />
+          <span id="sarcasm-value">3</span>
+        </div>
+        <button id="theme-toggle" class="control-btn" title="Changer le thème">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div id="chat-log" class="chat-log">
+        <!-- Messages seront injectés ici -->
+      </div>
+    </main>
+
+    <footer class="chat-input-area">
+      <input id="user-input" type="text" placeholder="Pose ta question à Brutus Mou..." autocomplete="off" />
+      <button id="send-btn">
+        <span class="btn-text">Envoyer</span>
+        <span class="btn-icon">✨</span>
+      </button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
